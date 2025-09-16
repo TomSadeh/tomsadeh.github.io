@@ -24,6 +24,38 @@
             padding: 40px 20px;
         }
 
+        .language-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .language-toggle:hover {
+            background-color: #2980b9;
+        }
+
+        .hebrew {
+            direction: rtl;
+            text-align: right;
+        }
+
+        .hebrew header {
+            text-align: center;
+        }
+
+        .hebrew .research-areas {
+            direction: rtl;
+            justify-content: flex-start;
+        }
+
         header {
             text-align: center;
             margin-bottom: 60px;
@@ -167,112 +199,254 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="profile-photo.jpg" alt="Tom Sadeh" class="profile-photo">
-            <h1>Tom Sadeh</h1>
-            <div class="subtitle">Research Publications</div>
-            <div class="contact-info">
-                <p>Researcher, Aaron Institute for Economic Policy</p>
-                <p>Jerusalem, Israel | <a href="mailto:dtsj89@gmail.com">dtsj89@gmail.com</a></p>
-            </div>
-        </header>
-
-        <div class="bio">
-            <p>Tom Sadeh is a founding member of <a href="https://www.midaat.org.il/" style="color: #3498db;">Midaat</a>, a nonprofit association advancing public health in healthcare and preventive medicine. His research focuses on Israeli economics, demographics, public policy, and social integration, with particular expertise in analyzing ultra-Orthodox communities and public health systems.</p>
-        </div>
-
-        <section>
-            <h2>Publications</h2>
-
-            <div class="publication upcoming">
-                <div class="pub-title"><a href="https://ieca.org.il/wp-content/uploads/2024/11/%D7%A2%D7%9C-%D7%94%D7%9E%D7%99%D7%A1%D7%99%D7%9D-%D7%95%D7%A2%D7%9C-%D7%94%D7%A0%D7%A4%D7%9C%D7%90%D7%95%D7%AA-%D7%9E%D7%90%D7%95%D7%97%D7%93-%D7%9C%D7%90%D7%AA%D7%A8.pdf" style="color: #2c3e50;">Complete Fiscal Accounts: Households’ Net Transfers in Israel (Hebrew)</a></div>
-                <div class="pub-authors">Ariel Karlinsky, Tom Sadeh, Eran Yogev, Michael Sarel</div>
-                <div class="pub-year">(Forthcoming in The Economic Quarterly)</div>
-                <div class="pub-description">Analysis of how government income (taxes) and expenditure (services) are distributed among Israeli households, providing insights into fiscal redistribution patterns.</div>
-                <div class="tag">Public Finance</div>
-                <div class="tag">Taxation</div>
-                <div class="tag">Government Services</div>
-            </div>
-
-            <div class="publication published">
-                <div class="pub-title"><a href="https://jppi.org.il/wp-content/uploads/2025/01/%D7%A2%D7%9C-%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA-%D7%90%D7%97%D7%A8%D7%95%D7%9F-%D7%9C%D7%A4%D7%A8%D7%A1%D7%95%D7%9D.pdf" style="color: #2c3e50;">Military Service in Israel (Hebrew)</a></div>
-                <div class="pub-authors">Tom Sadeh, Ariel Karlinsky</div>
-                <div class="pub-year">2025</div>
-                <div class="pub-description">Novel methodology for identifying soldiers in Israel's Central Bureau of Statistics major surveys, with characterization of people drafted to the IDF.</div>
-                <div class="tag">Methodology</div>
-                <div class="tag">Military Demographics</div>
-                <div class="tag">Survey Research</div>
-            </div>
-
-            <div class="publication published">
-                <div class="pub-title"><a href="https://www.runi.ac.il/media/punnvoyl/%D7%9E%D7%A9%D7%A7%D7%99-%D7%91%D7%99%D7%AA-%D7%97%D7%A8%D7%93%D7%99%D7%99%D7%9D-%D7%97%D7%A1%D7%99%D7%93%D7%99%D7%99%D7%9D-%D7%91%D7%90%D7%A8%D7%A6%D7%95%D7%AA-%D7%94%D7%91%D7%A8%D7%99%D7%AA-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf" style="color: #2c3e50;">Identifying Ultra-Orthodox Households in American Community Survey (Hebrew)</a></div>
-                <div class="pub-authors">Tom Sadeh, Hila Axelrad, Itschak Trachtengot</div>
-                <div class="pub-year">2025</div>
-                <div class="pub-description">Innovative methodology using Yiddish language patterns to identify Ultra-Orthodox households in American Community Survey data, with demographic and economic characterization.</div>
-                <div class="tag">Demographics</div>
-                <div class="tag">Methodology</div>
-                <div class="tag">Ultra-Orthodox Studies</div>
-            </div>
-
-            <div class="publication published">
-                <div class="pub-title"><a href="https://www.runi.ac.il/media/ezibyvu5/%D7%AA%D7%A2%D7%A1%D7%95%D7%A7%D7%94-%D7%90%D7%99%D7%9B%D7%95%D7%AA%D7%99%D7%AA-%D7%95%D7%94%D7%A9%D7%A4%D7%A2%D7%AA%D7%94-%D7%A2%D7%9C-%D7%9E%D7%A9%D7%A7%D7%99-%D7%94%D7%91%D7%99%D7%AA-%D7%94%D7%97%D7%A8%D7%93%D7%99%D7%99%D7%9D-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf" style="color: #2c3e50;">Economic Incentives and Barriers for Ultra-Orthodox Jewish Men Entering Israel's Workforce (Hebrew)</a></div>
-                <div class="pub-authors">Tom Sadeh, Hila Axelrad, Idit Kalisher, Arthur Sandler, Itschak Trachtengot</div>
-                <div class="pub-year">2024</div>
-                <div class="pub-description">An analysis examining employment patterns, education impacts, and social integration across different Haredi communities in Israel's workforce.</div>
-                <div class="tag">Labor Economics</div>
-                <div class="tag">Social Integration</div>
-                <div class="tag">Education Policy</div>
-            </div>
-
-            <div class="publication published">
-                <div class="pub-title"><a href="https://www.runi.ac.il/media/vxce2ruz/%D7%94%D7%90%D7%9D-%D7%9E%D7%A9%D7%AA%D7%9C%D7%9D-%D7%9C%D7%90%D7%91%D7%A8%D7%9A-%D7%97%D7%A8%D7%93%D7%99-%D7%9C%D7%94%D7%A6%D7%98%D7%A8%D7%A3-%D7%9C%D7%A9%D7%95%D7%A7-%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%94-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf" style="color: #2c3e50;">Financial Viability of Ultra-Orthodox Men Joining Israel's Workforce (Hebrew)</a></div>
-                <div class="pub-authors">Tom Sadeh, Hila Axelrad</div>
-                <div class="pub-year">2024</div>
-                <div class="pub-description">Economic analysis examining whether it's financially worthwhile for ultra-Orthodox (Haredi) men in Israel to join the workforce.</div>
-                <div class="tag">Labor Economics</div>
-                <div class="tag">Financial Analysis</div>
-                <div class="tag">Ultra-Orthodox Studies</div>
-            </div>
-
-            <div class="publication published">
-                <div class="pub-title"><a href="https://www.runi.ac.il/media/yold401e/%D7%94%D7%A9%D7%A4%D7%A2%D7%95%D7%AA-%D7%94%D7%9E%D7%9C%D7%97%D7%9E%D7%94-%D7%A2%D7%9C-%D7%94%D7%97%D7%91%D7%A8%D7%94-%D7%94%D7%97%D7%A8%D7%93%D7%99%D7%AA-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf" style="color: #2c3e50;">Effects of the October 7th War on Israel's Haredi Society (Hebrew)</a></div>
-                <div class="pub-authors">Tom Sadeh, Hila Axelrad, Sarit Menahem-Carmi, Itschak Trachtengot</div>
-                <div class="pub-year">2024</div>
-                <div class="pub-description">Analysis of how the October 7th war impacted Israel's Haredi (ultra-Orthodox) society, examining social, economic, and demographic changes.</div>
-                <div class="tag">Social Impact</div>
-                <div class="tag">War Studies</div>
-                <div class="tag">Ultra-Orthodox Studies</div>
-            </div>
-
-
-            <div class="publication published">
-                <div class="pub-title"><a href="https://kohelet.org.il/wp-content/uploads/2022/06/israel.prosper.chartbook4.pdf" style="color: #2c3e50;">Public Health System in Israel (Hebrew)</a></div>
-                <div class="pub-authors">Tom Sadeh</div>
-                <div class="pub-year">Published in Kohelet Policy Forum Chartbook</div>
-                <div class="pub-description">A chapter analyzing Israel's public health system, examining its structure, effectiveness, and policy implications.</div>
-                <div class="tag">Public Health</div>
-                <div class="tag">Healthcare Policy</div>
-                <div class="tag">Israel</div>
-            </div>
-        </section>
-
-        <section style="margin-top: 50px;">
-            <h2>Research Areas</h2>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
-                <div class="tag" style="font-size: 1em; padding: 8px 15px;">Israeli Economics</div>
-                <div class="tag" style="font-size: 1em; padding: 8px 15px;">Public Health Policy</div>
-                <div class="tag" style="font-size: 1em; padding: 8px 15px;">Ultra-Orthodox Studies</div>
-                <div class="tag" style="font-size: 1em; padding: 8px 15px;">Labor Economics</div>
-                <div class="tag" style="font-size: 1em; padding: 8px 15px;">Demographics</div>
-                <div class="tag" style="font-size: 1em; padding: 8px 15px;">Survey Methodology</div>
-                <div class="tag" style="font-size: 1em; padding: 8px 15px;">Public Finance</div>
-            </div>
-        </section>
-
-        <footer>
-            <p>© 2025 Tom Sadeh. All rights reserved.</p>
-        </footer>
+    <button class="language-toggle" onclick="toggleLanguage()">עברית</button>
+    <div class="container" id="content">
+        <!-- Content will be loaded by JavaScript -->
     </div>
+
+    <script>
+        let currentLanguage = 'en';
+
+        const content = {
+            en: {
+                title: "Tom Sadeh - Publications",
+                name: "Tom Sadeh",
+                subtitle: "Research Publications",
+                position: "Researcher, Aaron Institute for Economic Policy",
+                location: "Jerusalem, Israel",
+                bio: "Tom Sadeh is a founding member of <a href=\"https://www.midaat.org.il/\" style=\"color: #3498db;\">Midaat</a>, a nonprofit association advancing public health in healthcare and preventive medicine. His research focuses on Israeli economics, demographics, public policy, and social integration, with particular expertise in analyzing ultra-Orthodox communities and public health systems.",
+                publicationsTitle: "Publications",
+                researchAreasTitle: "Research Areas",
+                copyright: "© 2025 Tom Sadeh. All rights reserved.",
+                buttonText: "עברית",
+                publications: [
+                    {
+                        title: "Complete Fiscal Accounts: Households' Net Transfers in Israel",
+                        authors: "Ariel Karlinsky, Tom Sadeh, Eran Yogev, Michael Sarel",
+                        year: "(Forthcoming in The Economic Quarterly)",
+                        description: "Analysis of how government income (taxes) and expenditure (services) are distributed among Israeli households, providing insights into fiscal redistribution patterns.",
+                        tags: ["Public Finance", "Taxation", "Government Services"],
+                        link: "https://ieca.org.il/wp-content/uploads/2024/11/%D7%A2%D7%9C-%D7%94%D7%9E%D7%99%D7%A1%D7%99%D7%9D-%D7%95%D7%A2%D7%9C-%D7%94%D7%A0%D7%A4%D7%9C%D7%90%D7%95%D7%AA-%D7%9E%D7%90%D7%95%D7%97%D7%93-%D7%9C%D7%90%D7%AA%D7%A8.pdf",
+                        status: "upcoming"
+                    },
+                    {
+                        title: "Military Service in Israel",
+                        authors: "Tom Sadeh, Ariel Karlinsky",
+                        year: "2025",
+                        description: "Novel methodology for identifying soldiers in Israel's Central Bureau of Statistics major surveys, with characterization of people drafted to the IDF.",
+                        tags: ["Methodology", "Military Demographics", "Survey Research"],
+                        link: "https://jppi.org.il/wp-content/uploads/2025/01/%D7%A2%D7%9C-%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA-%D7%90%D7%97%D7%A8%D7%95%D7%9F-%D7%9C%D7%A4%D7%A8%D7%A1%D7%95%D7%9D.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "Identifying Ultra-Orthodox Households in American Community Survey",
+                        authors: "Tom Sadeh, Hila Axelrad, Itschak Trachtengot",
+                        year: "2025",
+                        description: "Innovative methodology using Yiddish language patterns to identify Ultra-Orthodox households in American Community Survey data, with demographic and economic characterization.",
+                        tags: ["Demographics", "Methodology", "Ultra-Orthodox Studies"],
+                        link: "https://www.runi.ac.il/media/punnvoyl/%D7%9E%D7%A9%D7%A7%D7%99-%D7%91%D7%99%D7%AA-%D7%97%D7%A8%D7%93%D7%99%D7%99%D7%9D-%D7%97%D7%A1%D7%99%D7%93%D7%99%D7%99%D7%9D-%D7%91%D7%90%D7%A8%D7%A6%D7%95%D7%AA-%D7%94%D7%91%D7%A8%D7%99%D7%AA-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "Economic Incentives and Barriers for Ultra-Orthodox Jewish Men Entering Israel's Workforce",
+                        authors: "Tom Sadeh, Hila Axelrad, Idit Kalisher, Arthur Sandler, Itschak Trachtengot",
+                        year: "2024",
+                        description: "An analysis examining employment patterns, education impacts, and social integration across different Haredi communities in Israel's workforce.",
+                        tags: ["Labor Economics", "Social Integration", "Education Policy"],
+                        link: "https://www.runi.ac.il/media/ezibyvu5/%D7%AA%D7%A2%D7%A1%D7%95%D7%A7%D7%94-%D7%90%D7%99%D7%9B%D7%95%D7%AA%D7%99%D7%AA-%D7%95%D7%94%D7%A9%D7%A4%D7%A2%D7%AA%D7%94-%D7%A2%D7%9C-%D7%9E%D7%A9%D7%A7%D7%99-%D7%94%D7%91%D7%99%D7%AA-%D7%94%D7%97%D7%A8%D7%93%D7%99%D7%99%D7%9D-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "Financial Viability of Ultra-Orthodox Men Joining Israel's Workforce",
+                        authors: "Tom Sadeh, Hila Axelrad",
+                        year: "2024",
+                        description: "Economic analysis examining whether it's financially worthwhile for ultra-Orthodox (Haredi) men in Israel to join the workforce.",
+                        tags: ["Labor Economics", "Financial Analysis", "Ultra-Orthodox Studies"],
+                        link: "https://www.runi.ac.il/media/vxce2ruz/%D7%94%D7%90%D7%9D-%D7%9E%D7%A9%D7%AA%D7%9C%D7%9D-%D7%9C%D7%90%D7%91%D7%A8%D7%9A-%D7%97%D7%A8%D7%93%D7%99-%D7%9C%D7%94%D7%A6%D7%98%D7%A8%D7%A3-%D7%9C%D7%A9%D7%95%D7%A7-%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%94-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "Effects of the October 7th War on Israel's Haredi Society",
+                        authors: "Tom Sadeh, Hila Axelrad, Sarit Menahem-Carmi, Itschak Trachtengot",
+                        year: "2024",
+                        description: "Analysis of how the October 7th war impacted Israel's Haredi (ultra-Orthodox) society, examining social, economic, and demographic changes.",
+                        tags: ["Social Impact", "War Studies", "Ultra-Orthodox Studies"],
+                        link: "https://www.runi.ac.il/media/yold401e/%D7%94%D7%A9%D7%A4%D7%A2%D7%95%D7%AA-%D7%94%D7%9E%D7%9C%D7%97%D7%9E%D7%94-%D7%A2%D7%9C-%D7%94%D7%97%D7%91%D7%A8%D7%94-%D7%94%D7%97%D7%A8%D7%93%D7%99%D7%AA-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "Public Health System in Israel",
+                        authors: "Tom Sadeh",
+                        year: "Published in Kohelet Policy Forum Chartbook",
+                        description: "A chapter analyzing Israel's public health system, examining its structure, effectiveness, and policy implications.",
+                        tags: ["Public Health", "Healthcare Policy", "Israel"],
+                        link: "https://kohelet.org.il/wp-content/uploads/2022/06/israel.prosper.chartbook4.pdf",
+                        status: "published"
+                    }
+                ],
+                researchAreas: ["Israeli Economics", "Public Health Policy", "Ultra-Orthodox Studies", "Labor Economics", "Demographics", "Survey Methodology", "Public Finance"]
+            },
+            he: {
+                title: "תום שדה - פרסומים",
+                name: "תום שדה",
+                subtitle: "פרסומים",
+                position: "חוקר, מכון אהרן למדיניות כלכלית",
+                location: "ירושלים, ישראל",
+                bio: "תום שדה הוא אחד ממייסדי <a href=\"https://www.midaat.org.il/\" style=\"color: #3498db;\">מדעת</a>, עמותה המתמחה בקידום הבריאות הציבורית בתחומי הרפואה והרפואה המונעת. מחקריו מתמקדים בכלכלה ישראלית, דמוגרפיה, מדיניות ציבורית ושילוב חברתי, עם מומחיות מיוחדת בניתוח קהילות חרדיות ומערכות בריאות ציבורית.",
+                publicationsTitle: "פרסומים",
+                researchAreasTitle: "תחומי מחקר",
+                copyright: "© 2025 תום שדה. כל הזכויות שמורות.",
+                buttonText: "English",
+                publications: [
+                    {
+                        title: "על המיסים ועל הנפלאות: התפלגות הכנסות והוצאות המדינה בקרב משקי הבית בישראל,
+                        authors: "אריאל קרלינסקי, תום שדה, ערן יוגב, מיכאל שרל",
+                        year: "(בהכנה לפרסום ברבעון לכלכלה)",
+                        description: "ניתוח של אופן חלוקת הכנסות הממשלה (מיסים) והוצאות (שירותים) בין משקי בית ישראליים, המספק תובנות על דפוסי חלוקה פיסקלית.",
+                        tags: ["כלכלה ציבורית", "מיסוי", "שירותי ממשלה"],
+                        link: "https://ieca.org.il/wp-content/uploads/2024/11/%D7%A2%D7%9C-%D7%94%D7%9E%D7%99%D7%A1%D7%99%D7%9D-%D7%95%D7%A2%D7%9C-%D7%94%D7%A0%D7%A4%D7%9C%D7%90%D7%95%D7%AA-%D7%9E%D7%90%D7%95%D7%97%D7%93-%D7%9C%D7%90%D7%AA%D7%A8.pdf",
+                        status: "upcoming"
+                    },
+                    {
+                        title: "על השירות",
+                        authors: "תום שדה, אריאל קרלינסקי",
+                        year: "2025",
+                        description: "מתודולוגיה חדשנית לזיהוי חיילים בסקרים הגדולים של הלמ״ס, עם אפיון של אנשים המתגייסים לצה״ל.",
+                        tags: ["מתודולוגיה", "דמוגרפיה צבאית", "מחקר סקרים"],
+                        link: "https://jppi.org.il/wp-content/uploads/2025/01/%D7%A2%D7%9C-%D7%94%D7%A9%D7%99%D7%A8%D7%95%D7%AA-%D7%90%D7%97%D7%A8%D7%95%D7%9F-%D7%9C%D7%A4%D7%A8%D7%A1%D7%95%D7%9D.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "זיהוי משקי בית חרדיים חסידיים בארצות הברית",
+                        authors: "תום שדה, הילה אקסלרוד, יצחק טרכטנגוט",
+                        year: "2025",
+                        description: "מתודולוגיה חדשנית המשתמשת בדפוסי שפה יידיש לזיהוי משקי בית חרדיים בנתוני סקר הקהילה האמריקנית, עם אפיון דמוגרפי וכלכלי.",
+                        tags: ["דמוגרפיה", "מתודולוגיה", "מחקרי חרדים"],
+                        link: "https://www.runi.ac.il/media/punnvoyl/%D7%9E%D7%A9%D7%A7%D7%99-%D7%91%D7%99%D7%AA-%D7%97%D7%A8%D7%93%D7%99%D7%99%D7%9D-%D7%97%D7%A1%D7%99%D7%93%D7%99%D7%99%D7%9D-%D7%91%D7%90%D7%A8%D7%A6%D7%95%D7%AA-%D7%94%D7%91%D7%A8%D7%99%D7%AA-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "תעסוקה איכותית והשפעתה על משקי הבית החרדיים",
+                        authors: "תום שדה, הילה אקסלרוד, עידית קלישר, ארתור סנדלר, יצחק טרכטנגוט",
+                        year: "2024",
+                        description: "ניתוח הבוחן דפוסי תעסוקה, השפעות חינוכיות ושילוב חברתי בקרב קהילות חרדיות שונות בשוק העבודה הישראלי.",
+                        tags: ["כלכלת העבודה", "שילוב חברתי", "מדיניות חינוך"],
+                        link: "https://www.runi.ac.il/media/ezibyvu5/%D7%AA%D7%A2%D7%A1%D7%95%D7%A7%D7%94-%D7%90%D7%99%D7%9B%D7%95%D7%AA%D7%99%D7%AA-%D7%95%D7%94%D7%A9%D7%A4%D7%A2%D7%AA%D7%94-%D7%A2%D7%9C-%D7%9E%D7%A9%D7%A7%D7%99-%D7%94%D7%91%D7%99%D7%AA-%D7%94%D7%97%D7%A8%D7%93%D7%99%D7%99%D7%9D-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "האם משתלם לאברך חרדי להצטרף לשוק העבודה",
+                        authors: "תום שדה, הילה אקסלרוד",
+                        year: "2024",
+                        description: "ניתוח כלכלי הבוחן האם כדאי כלכלית לגברים חרדים בישראל להצטרף לשוק העבודה.",
+                        tags: ["כלכלת העבודה", "ניתוח פיננסי", "מחקרי חרדים"],
+                        link: "https://www.runi.ac.il/media/vxce2ruz/%D7%94%D7%90%D7%9D-%D7%9E%D7%A9%D7%AA%D7%9C%D7%9D-%D7%9C%D7%90%D7%91%D7%A8%D7%9A-%D7%97%D7%A8%D7%93%D7%99-%D7%9C%D7%94%D7%A6%D7%98%D7%A8%D7%A3-%D7%9C%D7%A9%D7%95%D7%A7-%D7%94%D7%A2%D7%91%D7%95%D7%93%D7%94-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "השפעות המלחמה על החברה החרדית",
+                        authors: "תום שדה, הילה אקסלרוד, שרית מנחם-כרמי, יצחק טרכטנגוט",
+                        year: "2024",
+                        description: "ניתוח של השפעת מלחמת ה-7 באוקטובר על החברה החרדית בישראל, בחינת שינויים חברתיים, כלכליים ודמוגרפיים.",
+                        tags: ["השפעה חברתית", "מחקרי מלחמה", "מחקרי חרדים"],
+                        link: "https://www.runi.ac.il/media/yold401e/%D7%94%D7%A9%D7%A4%D7%A2%D7%95%D7%AA-%D7%94%D7%9E%D7%9C%D7%97%D7%9E%D7%94-%D7%A2%D7%9C-%D7%94%D7%97%D7%91%D7%A8%D7%94-%D7%94%D7%97%D7%A8%D7%93%D7%99%D7%AA-%D7%92%D7%99%D7%A8%D7%A1%D7%94-%D7%A1%D7%95%D7%A4%D7%99%D7%AA.pdf",
+                        status: "published"
+                    },
+                    {
+                        title: "מערכת הבריאות הציבורית בישראל",
+                        authors: "תום שדה",
+                        year: "פורסם בספר הנתונים של פורום קהלת",
+                        description: "פרק המנתח את מערכת הבריאות הציבורית בישראל, בוחן את המבנה, היעילות וההשלכות המדיניות.",
+                        tags: ["בריאות ציבורית", "מדיניות בריאות", "ישראל"],
+                        link: "https://kohelet.org.il/wp-content/uploads/2022/06/israel.prosper.chartbook4.pdf",
+                        status: "published"
+                    }
+                ],
+                researchAreas: ["כלכלה ישראלית", "מדיניות בריאות ציבורית", "מחקרי חרדים", "כלכלת העבודה", "דמוגרפיה", "מתודולוגיית סקרים", "כלכלה ציבורית"]
+            }
+        };
+
+        function toggleLanguage() {
+            currentLanguage = currentLanguage === 'en' ? 'he' : 'en';
+            updateContent();
+        }
+
+        function updateContent() {
+            const data = content[currentLanguage];
+            const container = document.getElementById('content');
+            const toggleButton = document.querySelector('.language-toggle');
+            
+            // Update document title
+            document.title = data.title;
+            
+            // Update language toggle button
+            toggleButton.textContent = data.buttonText;
+            
+            // Add/remove Hebrew class
+            if (currentLanguage === 'he') {
+                container.classList.add('hebrew');
+                document.documentElement.dir = 'rtl';
+            } else {
+                container.classList.remove('hebrew');
+                document.documentElement.dir = 'ltr';
+            }
+            
+            // Generate publications HTML
+            const publicationsHTML = data.publications.map(pub => `
+                <div class="publication ${pub.status}">
+                    <div class="pub-title">
+                        <a href="${pub.link}" style="color: #2c3e50;">${pub.title}</a>
+                    </div>
+                    <div class="pub-authors">${pub.authors}</div>
+                    <div class="pub-year">${pub.year}</div>
+                    <div class="pub-description">${pub.description}</div>
+                    ${pub.tags.map(tag => `<div class="tag">${tag}</div>`).join('')}
+                </div>
+            `).join('');
+            
+            // Generate research areas HTML
+            const researchAreasHTML = data.researchAreas.map(area => 
+                `<div class="tag" style="font-size: 1em; padding: 8px 15px;">${area}</div>`
+            ).join('');
+            
+            // Update content
+            container.innerHTML = `
+                <header>
+                    <img src="profile-photo.jpg" alt="Tom Sadeh" class="profile-photo">
+                    <h1>${data.name}</h1>
+                    <div class="subtitle">${data.subtitle}</div>
+                    <div class="contact-info">
+                        <p>${data.position}</p>
+                        <p>${data.location} | <a href="mailto:dtsj89@gmail.com">dtsj89@gmail.com</a></p>
+                    </div>
+                </header>
+
+                <div class="bio">
+                    <p>${data.bio}</p>
+                </div>
+
+                <section>
+                    <h2>${data.publicationsTitle}</h2>
+                    ${publicationsHTML}
+                </section>
+
+                <section style="margin-top: 50px;">
+                    <h2>${data.researchAreasTitle}</h2>
+                    <div class="research-areas" style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px;">
+                        ${researchAreasHTML}
+                    </div>
+                </section>
+
+                <footer>
+                    <p>${data.copyright}</p>
+                </footer>
+            `;
+        }
+
+        // Initialize with English content on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateContent();
+        });
+    </script>
 </body>
 </html>
